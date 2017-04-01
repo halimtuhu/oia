@@ -1,0 +1,49 @@
+.responsive-table {
+  min-height: .01%;
+  overflow-x: auto;
+}
+@media screen and (max-width: 767px) {
+  .responsive-table {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+  .responsive-table > .table {
+    margin-bottom: 0;
+  }
+  .responsive-table > .table > thead > tr > th,
+  .responsive-table > .table > tbody > tr > th,
+  .responsive-table > .table > tfoot > tr > th,
+  .responsive-table > .table > thead > tr > td,
+  .responsive-table > .table > tbody > tr > td,
+  .responsive-table > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+  .responsive-table > .table-bordered {
+    border: 0;
+  }
+  .responsive-table > .table-bordered > thead > tr > th:first-child,
+  .responsive-table > .table-bordered > tbody > tr > th:first-child,
+  .responsive-table > .table-bordered > tfoot > tr > th:first-child,
+  .responsive-table > .table-bordered > thead > tr > td:first-child,
+  .responsive-table > .table-bordered > tbody > tr > td:first-child,
+  .responsive-table > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .responsive-table > .table-bordered > thead > tr > th:last-child,
+  .responsive-table > .table-bordered > tbody > tr > th:last-child,
+  .responsive-table > .table-bordered > tfoot > tr > th:last-child,
+  .responsive-table > .table-bordered > thead > tr > td:last-child,
+  .responsive-table > .table-bordered > tbody > tr > td:last-child,
+  .responsive-table > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .responsive-table > .table-bordered > tbody > tr:last-child > th,
+  .responsive-table > .table-bordered > tfoot > tr:last-child > th,
+  .responsive-table > .table-bordered > tbody > tr:last-child > td,
+  .responsive-table > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
